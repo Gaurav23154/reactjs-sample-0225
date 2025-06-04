@@ -29,7 +29,7 @@ function SignupPage() {
     console.log('Signing up with:', { username, email, password, acceptTerms });
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post('https://reactjs-sample-0225-backend.onrender.com/api/auth/signup', {
         username,
         email,
         password,

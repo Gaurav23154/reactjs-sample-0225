@@ -20,7 +20,7 @@ function TaskBoardPage() {
   const [editedReminderDateTime, setEditedReminderDateTime] = useState(''); // State for reminder date/time
   const navigate = useNavigate(); // Initialize useNavigate
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'; // Use environment variable
+  const API_URL = import.meta.env.VITE_API_URL || 'https://reactjs-sample-0225-backend.onrender.com/api'; // Use environment variable
 
   // Function to fetch a random profile icon
   const fetchProfileIcon = async () => {

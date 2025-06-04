@@ -21,7 +21,7 @@ function LoginPage() {
     console.log('Logging in with:', { email, password, rememberMe });
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('https://reactjs-sample-0225-backend.onrender.com/api/auth/login', {
         email,
         password,
       });
