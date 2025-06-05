@@ -15,6 +15,11 @@ const UserSchema = new mongoose.Schema({
     trim: true,
     lowercase: true,
   },
+  emailId: {
+    type: String,
+    unique: true,
+    sparse: true, // This allows null values without causing duplicate key errors
+  },
   password: {
     type: String,
     required: true,
